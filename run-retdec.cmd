@@ -18,4 +18,4 @@ set restvar=%restvar% %1
 shift
 goto loop
 :after_loop
-docker run --rm -u root -v "%folder%":/destination retdec retdec-decompiler.py /destination/%filename%%extension% %restvar%
+docker run --rm -u root -v "%folder%":/destination retdec retdec-decompiler.py "/destination/%filename%%extension%" %restvar%
